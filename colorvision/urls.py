@@ -22,7 +22,7 @@ from main import views
 urlpatterns = [
 
     path('admin/', admin.site.urls),
-    path('', views.principal, name='principal'),
+    path('', views.index, name='index'),
     path("__reload__/", include("django_browser_reload.urls")),
     path('impresiones/', views.impresiones, name='impresiones'),
     path('testing/', views.testing, name='testing'),

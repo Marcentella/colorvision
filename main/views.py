@@ -3,8 +3,8 @@ from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.http import JsonResponse
 
-def principal(request):
-    return render(request, 'principal.html')
+def index(request):
+    return render(request, 'index.html')
 
 def impresiones(request):
     return render(request, 'impresiones.html')
