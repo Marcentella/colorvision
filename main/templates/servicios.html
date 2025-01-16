@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load bootstrap5 %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros servicios</title>
+    <link rel="stylesheet" href="{% static 'css/productos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footernav.css' %}">
+</head>
+<body>
+
+    {% block nav %}
+    {% include 'nav.html' %}
+    {% endblock nav %} 
+    
+    <div class="blob2"></div>
+
+    <div id="titulo-servicio-container"></div>
+    <h1 class="blippo white" id="servicios">Servicios</h1>
+    
+    <div class="border-wrap">
+        <div class="border-m"></div>
+    </div>
+
+    <div class="productos-wrapper">
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/service/PLOTTER DE PLANOS.png' %}" alt="Producto 1 Imagen1" class="pic">
+            </div>
+            <h3 class="productos-titulo">Plotter de Planos</h3>
+            <p class="productos-descripcion">Tamaño max A1</p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/service/IMPRESIONES.jpg' %}" alt="Producto 1 Imagen 2" class="pic">
+            </div>
+            <h3 class="productos-titulo">Impresiones</h3>
+            <p class="productos-descripcion">Carta<br>
+                Oficio<br>
+                A3<br>
+                33 x 48 cm
+            </p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/service/Fotocopias.jpg' %}" alt="Producto 1 Imagen1" class="pic">
+            </div>
+            <h3 class="productos-titulo">Fotocopias</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/service/ANILLADOS/CALENDARIOS.jpg' %}" alt="Producto 1 Imagen1" class="pic">
+                <img src="{% static 'img/service/ANILLADOS/CUADERNOS.jpg' %}" alt="Producto 1 Imagen 2" class="pic">
+                <img src="{% static 'img/service/ANILLADOS/LIBRETAS.jpg' %}" alt="Producto 1 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Anillados</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/service/DISEÑO/DISEÑO.jpg' %}" alt="Producto 1 Imagen1" class="pic">
+                <img src="{% static 'img/service/DISEÑO/SEPARADORES.jpg' %}" alt="Producto 1 Imagen 2" class="pic">
+                <img src="{% static 'img/service/DISEÑO/VARIOS.jpg' %}" alt="Producto 1 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Diseño</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/service/instalacion/ALJBE.jpg' %}" alt="Producto 1 Imagen1" class="pic">
+                <img src="{% static 'img/service/instalacion/CARRO.jpg' %}" alt="Producto 1 Imagen 2" class="pic">
+                <img src="{% static 'img/service/instalacion/CASINO.jpg' %}" alt="Producto 1 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Instalaciones</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/service/LAMINADO.jpg' %}" alt="Producto 1 Imagen1" class="pic">
+            </div>
+            <h3 class="productos-titulo">Laminado</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/service/PLASTIFICADOS/CARTELES.jpg' %}" alt="Producto 1 Imagen1" class="pic">
+                <img src="{% static 'img/service/PLASTIFICADOS/CATALOGO.jpg' %}" alt="Producto 1 Imagen 2" class="pic">
+                <img src="{% static 'img/service/PLASTIFICADOS/VARIEDAD DE TAMAÑOS.jpeg' %}" alt="Producto 1 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Plastificado</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+    </div>
+
+    {% block footer %}
+    {% include 'footer.html' %}
+    {% endblock footer %}
+
+    <script src="{% static 'js/products.js' %}"></script>
+
+</body>
+</html>

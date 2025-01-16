@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footernav.css' %}">
+</head>
+<body>
+    <div class="flex-container">
+        {% block nav %}
+            {% include 'nav.html' %}
+        {% endblock nav %}
+
+        <main>
+            <section class="contact-section">
+                <div class="form-container">
+                    <h1 class="reveal sanchez">Contactanos y detalla tu pedido</h1>
+                    <form id="contact-form" action="/submit-form" method="post" class="reveal">
+                        <div class="input-group">
+                            <input type="text" id="first_name" name="first_name" placeholder="Nombre" oninvalid="this.setCustomValidity('Campo obligatorio')" required >
+                            <input type="text" id="last_name" name="last_name" placeholder="Apellido" oninvalid="this.setCustomValidity('Campo obligatorio')" required>
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="E-mail" oninvalid="this.setCustomValidity('Campo obligatorio')" required>
+                        <textarea id="message" name="message" placeholder="Detállanos tu pedido" required></textarea>
+                        <button type="submit" class="btn">Enviar</button>
+                    </form>
+                </div>
+            </section>
+
+            <div class="redes-container">
+                <div class="redes reveal">
+                    <a href="https://www.facebook.com/Impresoscolorvision">
+                        <img src="{% static 'img/icons/facebook.png' %}" alt="facebook" >
+                    </a>
+                    <a href="mailto:contacto@colorvision.cl">
+                        <img src="{% static 'img/icons/email.png' %}" alt="email" >
+                    </a>
+                    <a href="https://wa.me/56984264438">
+                        <img src="{% static 'img/icons/whatsapp.png' %}" alt="whatsapp" >
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        {% block footer %}
+            {% include 'footer.html' %}
+        {% endblock footer %}
+    </div>
+
+    <script>
+        document.querySelectorAll("textarea").forEach(function(textarea) {
+        textarea.style.height = textarea.scrollHeight + "px";
+        textarea.style.overflowY = "hidden";
+
+        textarea.addEventListener("input", function() {
+            this.style.height = "auto";
+            this.style.height = this.scrollHeight + "px";
+        });
+    });
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var formData = new FormData(this);
+
+        fetch('/submit-form/', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-CSRFToken': '{{ csrf_token }}'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.message) {
+                alert(data.message);
+            } else {
+                alert('Error: ' + data.error);
+            }
+        });
+    });
+    </script>
+</body>
+</html>

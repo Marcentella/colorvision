@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     {% load bootstrap5 %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Vision</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    {% block nav %}
+        {% include 'nav.html' %}
+    {% endblock nav %}
+    
+    <div class="blob" aria-hidden="true">
+        
+    </div> <!-- Mark blob as decorative -->
+
+    <main class="main-content">
+        <section class="intro">
+            <div class="hero">
+                <img src="{% static 'img/firstlogo.png' %}" alt="Color Vision Logo" class="main-logo rotate">
+                <h1 class="title white blippo">Colorvisión</h1>
+                
+        </section>
+
+        
+        <h3 class="sanchez white" id="slogan"><gradient class="teal-green">Diseñamos</gradient> lo que imaginas, <gradient class="teal-green">imprimimos</gradient> lo que necesitas.</h3>
+            <p class="description gray sanchez">
+                Diseñamos y fabricamos productos gráficos personalizados de alta calidad:
+                <div class="slide arvo-regular text-center" role="region" aria-live="polite"> <!-- Define slide as a region and announce changes politely -->
+                    <div class="white">fotocopias</div>
+                    <div class="white">plastificados</div>
+                    <div class="white">tarjetas</div>
+                    <div class="white">etiquetas</div>
+                    <div class="white">escaparates</div>
+                    <div class="white">anillados</div>
+                </div>
+            </p>
+
+            <div class="border-wrap">
+                <div class="border"></div>
+            </div>
+            
+
+    </main>
+
+      <!-- Second hero -->
+    <section id="second-hero">
+        <div class="two-img-container">
+            <div class="img-top">
+                <img src="{% static 'img/prints/flyers/desplegable-png.png' %}" alt="flyer" width="250px" class="reveal">
+            </div>
+            <div class="img-bottom">
+                <img src="{% static 'img/prints/flyers/flyer-1-png.png' %}" alt="flyer2" width="250px" class="reveal">
+            </div>
+        </div>
+
+        <div class="sh-text-container">
+            <h1 class="playfair-display white reveal">Visualizalo y lo diseñamos</h1>
+            <span class="sanchez gray reveal">Transformamos tus ideas en productos gráficos de alta calidad, ajustados a tus necesidades. Desde escaparates que atraen clientes hasta cartas que dejan una impresión duradera. Todo personalizado y hecho a tu medida.</span>
+        </div>
+    </section>
+
+          <!-- Proceso -->
+          <div id="process-container">
+            <div class="card reveal">
+                <img src="{% static 'img/icons/tools.png' %}" alt="">
+                <h3 class="playfair-display white process-title">
+                    Preparación del pedido
+                </h3>
+                <span class="sanchez gray process-description">Te enviaremos una cotización detallada, una vez aprobada, nuestro equipo de diseño preparará la propuesta.</span>
+            </div>
+            <div class="card reveal">
+                <img src="{% static 'img/icons/checkmark.png' %}" alt="">
+                <h3 class="playfair-display white process-title">Confirmación</h3>
+                <span class="sanchez gray process-description">Esperamos con ansias tu confirmación
+                del presupuesto y a continuación del
+                diseño para poder comenzar el trabajo
+                cuanto antes.</span>
+            </div>
+            <div class="card reveal">
+                <img src="{% static 'img/icons/gear.png' %}" alt="">
+                <h3 class="playfair-display white process-title">Producción</h3>
+                <span class="process-description sanchez gray">Tu pedido será producido y despachado en los siguientes 5-10 días desde tu confirmación y abono. ¡Sabemos que tu tiempo es valioso! Por eso ponemos todo nuestro esfuerzo en realizarlo lo antes posible.</span>
+            </div>
+           </div>
+
+              <!-- Entrega -->
+            <div id="entrega-container">
+                <div id="entrega" class="card process-title reveal">
+                <img src="{% static 'img/icons/delivery.png' %}" alt="">
+                <h3 class="playfair-display white">Entrega</h3>
+                <span class="sanchez gray process-description">Nuestro equipo de logística entregará al instante tus productos en el transporte acordado. ¡Nos interesa que tengas el pedido cuanto antes en tus manos!</span>
+                </div>
+            </div>
+    
+
+    <section id="redes-section">
+        <!-- Redes Sociales -->
+        <div class="redes-container reveal card">
+            <h2 class="sanchez white"><b>¡Síguenos en nuestras redes!</b></h2>
+            <p class="sanchez gray">Utiliza nuestros medios para consultarnos sobre tus necesidades.</p>
+            <div class="redes d-flex justify-content-around gap-3">
+                <a href="https://www.facebook.com/Impresoscolorvision">
+                    <img src="{% static 'img/icons/facebook.png' %}" alt="facebook" >
+                </a>
+                <a href="https://www.instagram.com/colorvision_alhue/">
+                    <img src="{% static 'img/icons/instagram.png' %}" alt="instagram" >
+                </a>
+                <a href="https://wa.me/56984264438">
+                    <img src="{% static 'img/icons/whatsapp.png' %}" alt="whatsapp" >
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+        
+
+    <!-- Footer -->
+    {% block footer %}
+        {% include 'footer.html' %}
+    {% endblock footer %}
+
+    
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

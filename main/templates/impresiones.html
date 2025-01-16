@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresiones Digitales</title>
+    <link rel="stylesheet" href="{% static 'css/productos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footernav.css' %}">
+</head>
+<body>
+
+    {% block nav %}
+    {% include 'nav.html' %}
+    {% endblock nav %} 
+    
+    <div class="blob2"></div>
+
+    <div id="titulo-impresiones-container"></div>
+    <h1 class="blippo white" id="impresiones-digitales">Impresiones Digitales</h1>
+    
+    <div class="border-wrap">
+        <div class="border-m"></div>
+    </div>
+
+    <div class="productos-wrapper">
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/prints/tarjetas/POLIMATE Y LACA CON RESERVA.jpg' %}" alt="Producto 1 Imagen1" class="pic">
+                <img src="{% static 'img/prints/tarjetas/con sobre.jpg' %}" alt="Producto 1 Imagen 2" class="pic">
+                <img src="{% static 'img/prints/tarjetas/presentacion.jpg' %}" alt="Producto 1 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Tarjetas de Presentación</h3>
+            <p class="productos-descripcion">Normales<br>
+                Laminadas<br>
+                Con laca
+            </p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/prints/flyers/10X15 CM.jpg' %}" alt="Producto 2 Imagen 1" class="pic">
+                <img src="{% static 'img/prints/flyers/flyer-1.jpg' %}" alt="Producto 2 Imagen 2" class="pic">
+                <img src="{% static 'img/prints/flyers/DISEÑOS PERSONALIZADOS.jpg' %}" alt="Producto 2 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Volantes/Flyer</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/prints/tarjetas/cumpleanos.jpg' %}" alt="Producto 3 Imagen 1" class="pic">
+                <img src="{% static 'img/prints/tarjetas/religiosas.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+                <img src="{% static 'img/prints/tarjetas/por tiro y retiro.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+            </div>
+            <h3 class="productos-titulo">Invitaciones</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/prints/flyers/DIPTICOS.jpg' %}" alt="Producto 1 Imagen 1" class="pic">
+                <img src="{% static 'img/prints/flyers/DESPLEGABLE.jpg' %}" alt="Producto 1 Imagen 2" class="pic">
+                <img src="{% static 'img/prints/flyers/POLIDIPTICO.jpg' %}" alt="Producto 1 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Dípticos Trípticos Polípticos Desplegables</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/prints/talonarios/ENTRADAS.jpg' %}" alt="Producto 2 Imagen 1" class="pic">
+                <img src="{% static 'img/prints/talonarios/TALONARIOS.jpg' %}" alt="Producto 2 Imagen 2" class="pic">
+                <img src="{% static 'img/prints/talonarios/PREPICADOS.jpg' %}" alt="Producto 2 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Talonarios</h3>
+            <p class="productos-descripcion">Recetarios<br>
+                Checklist Autocopiativos<br>
+                Foliados
+            </p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/prints/carpetas/CARPETA LAMINADA.png' %}" alt="Producto 3 Imagen 1" class="pic">
+                <img src="{% static 'img/prints/carpetas/CARPETA PRESENTACION.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+                <img src="{% static 'img/prints/carpetas/carpeta-con-bolsillo.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+            </div>
+            <h3 class="productos-titulo">Carpetas</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/prints/cartas menu/ANILLADA CARTA.jpg' %}" alt="Producto 1 Imagen 1" class="pic">
+                <img src="{% static 'img/prints/cartas menu/ANILLADA MEDIA CARTA.jpg' %}" alt="Producto 1 Imagen 2" class="pic">
+                <img src="{% static 'img/prints/cartas menu/CARTA ACRILICO 10x15.jpg' %}" alt="Producto 1 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Cartas Menú</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/prints/libretas agendas cuadernos/ANILLADAS.jpg' %}" alt="Producto 2 Imagen 1" class="pic">
+                <img src="{% static 'img/prints/libretas agendas cuadernos/LIBRETA.jpg' %}" alt="Producto 2 Imagen 2" class="pic">
+                <img src="{% static 'img/prints/libretas agendas cuadernos/CUADERNOS TAPA DURA.jpg' %}" alt="Producto 2 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Libretas</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/prints/libretas agendas cuadernos/CUADERNOS TAPA DURA.jpg' %}" alt="Producto 3 Imagen 1" class="pic">
+                <img src="{% static 'img/prints/libretas agendas cuadernos/TAMAÑOS PERSONALIZADOS.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+                <img src="{% static 'img/prints/libretas agendas cuadernos/ANILLADAS.jpg' %}" alt="Producto 3 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Cuadernos</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/prints/revistas/CANCIONEROS.jpg' %}" alt="Producto 3 Imagen 1" class="pic">
+                <img src="{% static 'img/prints/revistas/REGLAMENTOS INTERNOS.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+                <img src="{% static 'img/prints/revistas/CANCIONEROS.jpg' %}" alt="Producto 3 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Revistas</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/prints/packaging/CAJA SANDWICH.jpg' %}" alt="Producto 3 Imagen 1" class="pic">
+                <img src="{% static 'img/prints/packaging/BOLSA.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+                <img src="{% static 'img/prints/packaging/CAJA VINO.jpg' %}" alt="Producto 3 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Envases</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+    </div>
+
+    {% block footer %}
+    {% include 'footer.html' %}
+    {% endblock footer %}
+
+    <script src="{% static 'js/products.js' %}"></script>
+</body>
+</html>

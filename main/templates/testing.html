@@ -1,0 +1,13 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/testing.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="pic-ctn">
+
+        {% block nav %}
+            {% include 'nav.html' %}
+        {% endblock nav %}
+
+ 

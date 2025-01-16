@@ -1,0 +1,36 @@
+{% load static %}
+{% block nav %}
+<head>
+    <link rel="icon" href="{% static 'img/firstlogo.png' %}"/>
+    <link rel="stylesheet" href="{% static 'css/footernav.css' %}">
+</head>
+<header class="header">
+    <nav class="navbar">
+        
+         <img src="{% static 'img/icons/hamburguer.png' %}" alt="Menu" class="hamburger-img" id="hamburger-img">
+        <img src="{% static 'img/firstlogo.png' %}" alt="Color Vision Logo" class="logo">
+
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="{% url 'principal' %}">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Nuestros Productos <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="{% url 'impresiones' %}">Impresión Digital Offset</a>
+                    <a href="{% url 'plotter' %}">Plotter</a>
+                    <a href="{% url 'otros' %}">Otros</a>
+                </div>
+            </li>
+            <li><a href="{% url 'servicio' %}">Servicios</a></li>
+            <li>
+                <a href="{% url 'contact' %}">
+                    <div class="fancybtn-container">
+                      <button class="fancybtn">Contáctanos Ahora</button>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        
+    </nav> 
+    <script src="{% static 'js/script.js' %}"></script>
+</header>
+{% endblock nav %}

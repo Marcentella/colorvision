@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresiones Digitales</title>
+    <link rel="stylesheet" href="{% static 'css/productos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footernav.css' %}">
+</head>
+<body>
+
+    {% block nav %}
+    {% include 'nav.html' %}
+    {% endblock nav %} 
+    
+    <div class="blob2"></div>
+
+    <div id="titulo-impresiones-container"></div>
+    <h1 class="blippo white" id="impresiones-digitales">Otros</h1>
+    
+    <div class="border-wrap">
+        <div class="border-m"></div>
+    </div>
+
+    <div class="productos-wrapper">
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/otros/regalos/CALENDARIOS.jpg' %}" alt="Producto 1 Imagen1" class="pic">
+                <img src="{% static 'img/otros/regalos/GRABADO.jpg' %}" alt="Producto 1 Imagen 2" class="pic">
+                <img src="{% static 'img/otros/regalos/RECUERDOS.jpg' %}" alt="Producto 1 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Regalos Publicitarios</h3>
+            <p class="productos-descripcion">Tazones<br>
+                Llaveros<br>
+                Vasos térmicos<br>
+                Calendarios (escritorio,pared,imantado)<br>
+                Lápices<br>
+                Pendrive<br>
+                Chapitas<br>
+                Jockey<br>
+                Poleras<br>
+                Delantales<br>
+                Morrales<br>
+                Cuadernos<br>
+                Layard<br>
+                Y más…
+            </p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/otros/credenciales_pvc/credenciales-1.jpg' %}" alt="Producto 2 Imagen 1" class="pic">
+                <img src="{% static 'img/otros/credenciales_pvc/credenciales-2.jpg' %}" alt="Producto 2 Imagen 2" class="pic">
+                <img src="{% static 'img/otros/credenciales_pvc/credenciales-3.jpg' %}" alt="Producto 2 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Credenciales PVC</h3>
+            <p class="productos-descripcion">Con o sin porta credencial
+                Layard o yoyo</p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/otros/imantados/CONMEMORAIVOS.jpg' %}" alt="Producto 3 Imagen 1" class="pic">
+                <img src="{% static 'img/otros/imantados/PUBLICITARIOS.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+                <img src="{% static 'img/otros/imantados/INFORMATIVOS.jpg' %}" alt="Producto 3 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Imantados</h3>
+            <p class="productos-descripcion">Cuadrados<br>
+                Formas
+            </p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/otros/timbres/DE BOLSILLO.jpg' %}" alt="Producto 1 Imagen 1" class="pic">
+                <img src="{% static 'img/otros/timbres/DE ESCRITORIO.jpg' %}" alt="Producto 1 Imagen 2" class="pic">
+                <img src="{% static 'img/otros/timbres/VARIEDAD DE TAMAÑOS.jpg' %}" alt="Producto 1 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Timbres</h3>
+            <p class="productos-descripcion">Escritorio o bolsillo<br>
+                Redondos<br>
+                Cuadrados<br>
+                Rectangualres<br>
+                Fechadores<br>
+                Foliadores
+            </p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/otros/ACRILICOS/.jpg' %}" alt="Producto 2 Imagen 1" class="pic">
+                <img src="{% static 'img/otros/ACRILICOS/.jpg' %}" alt="Producto 2 Imagen 2" class="pic">
+                <img src="{% static 'img/otros/ACRILICOS/.jpg' %}" alt="Producto 2 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Cuadros en Bastidor de Madera</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/otros/enmarcados/COLLAGE.jpg' %}" alt="Producto 2 Imagen 1" class="pic">
+                <img src="{% static 'img/otros/enmarcados/DISEÑOS PERSONALIZADOS.jpg' %}" alt="Producto 2 Imagen 2" class="pic">
+                <img src="{% static 'img/otros/enmarcados/FOTOS.jpg' %}" alt="Producto 2 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Fotografías/Collage Enmarcados</h3>
+            <p class="productos-descripcion">10×15<br>
+                13×18<br>
+                15×20<br>
+                22×28<br>
+                20×30<br>
+                30×40<br>
+                40×50<br>
+                Tamaños especiales a pedido
+            </p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/otros/bolsas/REUTILIZABLES.jpg' %}" alt="Producto 1 Imagen 1" class="pic">
+                <img src="{% static 'img/otros/bolsas/VARIEDAD DE TAMAÑOS.jpg' %}" alt="Producto 1 Imagen 2" class="pic">
+                <img src="{% static 'img/otros/bolsas/SUBLIMADAS.jpg' %}" alt="Producto 1 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Bolsas</h3>
+            <p class="productos-descripcion">Papel<br>
+                Tnt<br>
+                Crea
+            </p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/otros/ACRILICOS/ADHESIVO POSTERIOR.jpg' %}" alt="Producto 2 Imagen 1" class="pic">
+                <img src="{% static 'img/otros/ACRILICOS/FORMAS A PEDIDO.jpg' %}" alt="Producto 2 Imagen 2" class="pic">
+                <img src="{% static 'img/otros/ACRILICOS/PERFORADOS CON DISTANCIADORES.jpg' %}" alt="Producto 2 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Otros</h3>
+            <p class="productos-descripcion">Acrílicos<br>
+                Señalética
+            </p>
+        </div>
+    </div>
+
+    {% block footer %}
+    {% include 'footer.html' %}
+    {% endblock footer %}
+
+    <script src="{% static 'js/products.js' %}"></script>
+
+</body>
+</html>

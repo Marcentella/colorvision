@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresiones Digitales</title>
+    <link rel="stylesheet" href="{% static 'css/productos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footernav.css' %}">
+</head>
+<body>
+
+    {% block nav %}
+    {% include 'nav.html' %}
+    {% endblock nav %} 
+    
+    <div class="blob2"></div>
+
+    <div id="titulo-impresiones-container"></div>
+    <h1 class="blippo white" id="impresiones-digitales">Plotter</h1>
+    
+    <div class="border-wrap">
+        <div class="border-m"></div>
+    </div>
+
+    <div class="productos-wrapper">
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/plotter/senaleticas/GALVANIZADOS.jpg' %}" alt="Producto 1 Imagen1" class="pic">
+                <img src="{% static 'img/plotter/senaleticas/TROVICEL.jpg' %}" alt="Producto 1 Imagen 2" class="pic">
+                <img src="{% static 'img/plotter/senaleticas/REFLECTANTES.jpg' %}" alt="Producto 1 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Señaléticas</h3>
+            <p class="productos-descripcion">
+                Trovicel/Sintra<br>
+                Foam<br>
+                Galvanizadas<br>
+                Reflectantes<br>
+                Fosforecentes<br>
+                Fotoluminiscentes
+            </p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/plotter/Infografias/infografias-3.png' %}" alt="Producto 2 Imagen 1" class="pic">
+                <img src="{% static 'img/plotter/infografias/FOAM.JPG' %}" alt="Producto 2 Imagen 2" class="pic">
+                <img src="{% static 'img/plotter/infografias/infografias-4.jpg' %}" alt="Producto 2 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Infografías</h3>
+            <p class="productos-descripcion">Trovicel/Sintra<br>
+                Foam<br>
+                Galvanizadas<br>
+                Reflectantes<br>
+                Fosforecentes<br>
+                Fotoluminiscentes
+            </p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/plotter/pendones/DISEÑOS PERSONALIZADOS.jpg' %}" alt="Producto 3 Imagen 1" class="pic">
+                <img src="{% static 'img/plotter/pendones/ROLLER.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+                <img src="{% static 'img/plotter/pendones/ARANA.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+            </div>
+            <h3 class="productos-titulo">Pendones</h3>
+            <p class="productos-descripcion">PVC<br>
+                Roller<br>
+                Araña<br>
+                Atril
+            </p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/plotter/pasacalles/PASACALLES.jpeg' %}" alt="Producto 1 Imagen 1" class="pic">
+            </div>
+            <h3 class="productos-titulo">Pasacalles</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/plotter/gigantografias/gigantografia-1.jpg' %}" alt="Producto 2 Imagen 1" class="pic">
+                <img src="{% static 'img/plotter/gigantografias/gigantografia-2.jpeg' %}" alt="Producto 2 Imagen 2" class="pic">
+                <img src="{% static 'img/plotter/gigantografias/gigantografia-3.jpg' %}" alt="Producto 2 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Gigantografías</h3>
+            <p class="productos-descripcion">Recetarios<br>
+                Checklist Autocopiativos<br>
+                Foliados<br>
+            </p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/plotter/palomas/paloma-1.jpg' %}" alt="Producto 3 Imagen 1" class="pic">
+                <img src="{% static 'img/plotter/palomas/paloma-2.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+                <img src="{% static 'img/plotter/palomas/paloma-3.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+            </div>
+            <h3 class="productos-titulo">Palomas</h3>
+            <p class="productos-descripcion">Comerciales<br>
+                Politicas</p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/plotter/etiquetas_adhesivas/adhesivos-1.jpg' %}" alt="Producto 1 Imagen 1" class="pic">
+                <img src="{% static 'img/plotter/etiquetas_adhesivas/adhesivos-2.jpg' %}" alt="Producto 1 Imagen 2" class="pic">
+                <img src="{% static 'img/plotter/etiquetas_adhesivas/adhesivos-3.jpg' %}" alt="Producto 1 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Etiquetas Adhesivas</h3>
+            <p class="productos-descripcion">Cuadradas<br>
+                Con formas<br>
+                Reflectantes
+            </p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/plotter/blacklights/blacklight-1.jpg' %}" alt="Producto 2 Imagen 1" class="pic">
+                <img src="{% static 'img/plotter/blacklights/blacklight-2.jpg' %}" alt="Producto 2 Imagen 2" class="pic">
+                <img src="{% static 'img/plotter/blacklights/blacklight-3.jpg' %}" alt="Producto 2 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Backlight</h3>
+            <p class="productos-descripcion">Laminado UV</p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/plotter/papel_sintetico/papel-sintetico-1.jpeg' %}" alt="Producto 3 Imagen 1" class="pic">
+                <img src="{% static 'img/plotter/papel_sintetico/papel-sintetico-2.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+                <img src="{% static 'img/plotter/papel_sintetico/papel-sintetico-2.jpg' %}" alt="Producto 3 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Papel Sintético</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/plotter/window/window-1.jpg' %}" alt="Producto 3 Imagen 1" class="pic">
+                <img src="{% static 'img/plotter/window/window-2.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+                <img src="{% static 'img/plotter/window/window-3.jpg' %}" alt="Producto 3 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Window Visión</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/plotter/floor_graphics/floor-graphics-1.jpg' %}" alt="Producto 3 Imagen 1" class="pic">
+                <img src="{% static 'img/plotter/floor_graphics/floor-graphics-2.jpg' %}" alt="Producto 3 Imagen 2" class="pic">
+                <img src="{% static 'img/plotter/floor_graphics/floor-graphics-3.jpg' %}" alt="Producto 3 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Floor Graphics</h3>
+            <p class="productos-descripcion"></p>
+        </div>
+        <div class="productos-tarjeta card">
+            <div class="productos-carrusel pic-ctn">
+                <img src="{% static 'img/plotter/rotulados/rotulado-1.jpg' %}" alt="Producto 3 Imagen 1" class="pic">
+                <img src="{% static 'img/plotter/rotulados/rotulado-2.jpeg' %}" alt="Producto 3 Imagen 2" class="pic">
+                <img src="{% static 'img/plotter/rotulados/ROTULADOS.jpg' %}" alt="Producto 3 Imagen 3" class="pic">
+            </div>
+            <h3 class="productos-titulo">Rotulados</h3>
+            <p class="productos-descripcion">Vinilo adhesivo<br>
+                Empavonado
+            </p>
+        </div>
+    </div>
+
+    {% block footer %}
+    {% include 'footer.html' %}
+    {% endblock footer %}
+
+    <script src="{% static 'js/products.js' %}"></script>
+    
+</body>
+</html>
