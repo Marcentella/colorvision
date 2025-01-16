@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-n(_4&l)*m7!&k*g$k#f5y$cw*18@i5@)z)o!4b1j&m_n&p&4^)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['colorvision.onrender.com']
+ALLOWED_HOSTS = ['colorvision.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -132,11 +132,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
 STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Path for your development static files
+    os.path.join(BASE_DIR, 'main', 'static'),
 ]
-STATIC_ROOT = BASE_DIR / "staticfiles"  # Directory for collected static files
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
 
 
 # Default primary key field type
