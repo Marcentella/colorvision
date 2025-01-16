@@ -134,9 +134,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "main" / "static",  # Correct path for the main app's static directory
+    BASE_DIR / "static",  # Path for your development static files
 ]
-STATIC_ROOT = BASE_DIR / "static"  # Use a different directory for collected static files
+STATIC_ROOT = BASE_DIR / "staticfiles"  # Directory for collected static files
 
 
 # Default primary key field type
